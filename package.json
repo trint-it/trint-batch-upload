@@ -1,0 +1,57 @@
+{
+  "name": "@trint/batch-upload",
+  "version": "0.1.0",
+  "description": "Batch upload utility for Trint",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "batch-upload": "./dist/cli.js",
+    "trint-batch-upload": "./dist/cli.js"
+  },
+  "files": [
+    "dist/**/*.js",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "dev": "ts-node src/cli.ts",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "trint",
+    "upload",
+    "batch"
+  ],
+  "author": "Trint Engineering <support@trint.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trint/batch-upload"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "commander": "^11.0.0",
+    "glob": "^8"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.42",
+    "@types/glob": "^8.1.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.19.25",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^30.2.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}
