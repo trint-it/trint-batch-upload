@@ -9,13 +9,14 @@ import { Command } from 'commander';
 import { runUpload } from './runUpload';
 import { parsePatternsFromFile } from './parsePatternsFromFile';
 import type { UploadOptions } from './types';
+import { version } from '../package.json';
 
 const program = new Command();
 
 program
   .name('batch-upload')
   .description('Cross-platform batch upload utility for Trint')
-  .version('0.1.0')
+  .version(version)
   .addHelpText(
     'after',
     `

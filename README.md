@@ -50,7 +50,7 @@ trint-batch-upload [options]
 
 #### Server Configuration
 
-- `-u, --server <url>` - Server URL
+- `-u, --server <url>` - Server URL (default: https://upload.trint.com, use https://upload.eu.trint.com for the EU tenant)
 
 #### File Selection
 
